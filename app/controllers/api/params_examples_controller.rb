@@ -5,4 +5,9 @@ class Api::ParamsExamplesController < ApplicationController
 
     render 'query_params_view.json.jb'
   end
+
+  def url_segment_params_action
+    @message = params[:wildcard]
+    render 'url_segment_params_view.json.jb'
+  end
 end
